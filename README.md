@@ -1,3 +1,7 @@
+# react-expense-tracker
+
+## This application doesn't have a backend and does not offer persistence currently.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
