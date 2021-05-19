@@ -1,45 +1,34 @@
 {
-  "name": "react-hooks",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "concurrently": "^6.1.0",
-    "install": "^0.13.0",
-    "json-server": "^0.16.3",
-    "nodeman": "^1.1.2",
-    "react": "^17.0.2",
-    "react-devtools": "^4.13.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "uuid": "^8.3.2",
-    "web-vitals": "^1.0.1"
-  },
+  "name": "react-expense-tracker",
+  "version": "1.0.0",
+  "description": "Backend",
+  "main": "server.js",
   "scripts": {
-    "dev": "concurrently \"yarn start\" \"yarn json-server --watch db.json --port 5000\"",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pratzy/react-expense-tracker.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "author": "Prateek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pratzy/react-expense-tracker/issues"
+  },
+  "homepage": "https://github.com/pratzy/react-expense-tracker#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.10",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.1.0",
+    "nodemon": "^2.0.7"
   }
 }
